@@ -10,20 +10,25 @@ def calcular_troco():
 
 def calculadora_de_moedas():
     total_no_caixa = 0.00
-    print("------------CALCULADORA DE MOEDAS-----------")
-    notas_de_200 = int(input("Notas de 200 reais: "))
-    notas_de_100 = int(input("Notas de 100 reais: "))
-    notas_de_50 = int(input("Notas de 50 reais: "))
-    notas_de_20 = int(input("Notas de 20 reais: "))
-    notas_de_10 = int(input("Notas de 10 reais: "))
-    notas_de_5 = int(input("Notas de 5 reais: "))
-    notas_de_2 = int(input("Notas de 2 reais: "))
-    moedas_de_1 = int(input("Moedas de 1 real: "))
-    moedas_de_50 = int(input("Moedas de 50 centavos: "))
-    moedas_de_25 = int(input("Moedas de 25 centavos: "))
-    moedas_de_10 = int(input("Moedas de 10 centavos: "))
-    moedas_de_05 = int(input("Moedas de 5 centavos: "))
-    moedas_de_01 = int(input("Moedas de 1 centavo: "))
+    while True:
+        try:
+            print("------------CALCULADORA DE MOEDAS-----------")
+            notas_de_200 = int(input("Notas de 200 reais: "))
+            notas_de_100 = int(input("Notas de 100 reais: "))
+            notas_de_50 = int(input("Notas de 50 reais: "))
+            notas_de_20 = int(input("Notas de 20 reais: "))
+            notas_de_10 = int(input("Notas de 10 reais: "))
+            notas_de_5 = int(input("Notas de 5 reais: "))
+            notas_de_2 = int(input("Notas de 2 reais: "))
+            moedas_de_1 = int(input("Moedas de 1 real: "))
+            moedas_de_50 = int(input("Moedas de 50 centavos: "))
+            moedas_de_25 = int(input("Moedas de 25 centavos: "))
+            moedas_de_10 = int(input("Moedas de 10 centavos: "))
+            moedas_de_05 = int(input("Moedas de 5 centavos: "))
+            moedas_de_01 = int(input("Moedas de 1 centavo: "))
+            break
+        except:
+            print("Valor digitado invalido!\nDigite um numero inteiro!")
     total_no_caixa = total_no_caixa + (notas_de_200 * 200.00)
     total_no_caixa = total_no_caixa + (notas_de_100 * 100.00)
     total_no_caixa = total_no_caixa + (notas_de_50 * 50.00)
