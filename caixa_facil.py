@@ -1,12 +1,3 @@
-from turtle import color
-
-
-class bcolors:
-    OK = '\033[92m' #GREEN
-    WARNING = '\033[93m' #YELLOW
-    FAIL = '\033[91m' #RED
-    RESET = '\033[0m' #RESET COLOR
-
 def calcular_troco():
     valor_inicial = float(input("Escreva o valor do troco inicial: "))
     valor_final = float(input("Escreva o valor do final do dia: "))
@@ -21,7 +12,7 @@ def calculadora_de_moedas():
     total_no_caixa = 0.00
     while True:
         try:
-            print(f"{colors.OK}------------CALCULADORA DE MOEDAS-----------{colors.RESET}")
+            print("------------CALCULADORA DE MOEDAS-----------")
             notas_de_200 = int(input("Notas de 200 reais: "))
             notas_de_100 = int(input("Notas de 100 reais: "))
             notas_de_50 = int(input("Notas de 50 reais: "))
@@ -61,13 +52,16 @@ colors = bcolors()
 
 while True:
     print("=============================================")
-    print(f"{colors.OK}=================CAIXA FACIL================={colors.RESET}")
+    print("=================CAIXA FACIL=================")
     print("=============================================")
     print("1 - Calcular o troco.")
     print("2 - Calculadora de moedas:\n\n")
     print("3 - Sair")
     print("=============================================")
-    escolha = int(input("Escolha uma opção: "))
+    try:
+        escolha = int(input("Escolha uma opção: "))
+    except:
+        escolha = 4
 
     if escolha == 1:
         calcular_troco()
