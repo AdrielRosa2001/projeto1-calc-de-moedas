@@ -11,6 +11,5 @@ Contador de moedas via console feito para fins de estudo.
 ## Contatos
 
 - E-mail: adrielrosa@live.com
-- LinkedIn: https://www.linkedin.com/in/jonathan-ramos-p/
-
+- LinkedIn: https://www.linkedin.com/in/adriel-rosa-660431144/
 
