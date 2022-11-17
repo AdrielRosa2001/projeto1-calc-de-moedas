@@ -1,6 +1,6 @@
 # Projeto Calculadora de moedas
 
-Contador de moedas via console feito para fins de estudo.
+Contador de moedas via console feito para fins de estudo. 
 
 > Adriel Rosa (update: 17/11/2022 - 15:56 PM)
 
